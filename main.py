@@ -2,10 +2,10 @@ import discord,os
 from discord.ext import commands
 
 #Global vars
-token = os.getenv("bot_token")
-bot_name = "My First Bot"
+token = os.getenv("MTA2OTAzNzI2Mjg3ODI4OTk0MA.GgcH1I.AuRW-pewb2xYzLIWC4nKejxS2xG2W9rgEMy8q8")
+bot_name = "CCRP BOT"
 cmd_prefix = "|"
-mod_role = "Mod Role Name"
+mod_role = "SOWJBOTT"
 
 client = commands.Bot(command_prefix = cmd_prefix)
 client.remove_command('help')
@@ -27,7 +27,7 @@ async def help(ctx):
     colour = discord.Colour.orange()
   )
 
-  embed.set_footer(text = "Made By @Fishball_Noodles. Bot Realeased Since June 01,2020")
+  embed.set_footer(text = "Made By Sowj.")
   embed.set_author(name = bot_name)
   embed.add_field(name = f"{cmd_prefix}ping", value = "Check Ping",inline = False)
   embed.add_field(name = f"{cmd_prefix}clear <Number of Messages to clear>", value = "Clear Messages (Default 10)",inline= False)
@@ -44,7 +44,7 @@ async def suggest(ctx,*,suggestion):
     colour = discord.Colour.orange()
   )
 
-  embed.set_footer(text = "Made By @Fishball_Noodles with .py")
+  embed.set_footer(text = "Made By Sowj .py")
   embed.set_author(name = bot_name)
   embed.add_field(name = author, value = suggestion,inline = False)
   channel = client.get_channel(suggestion_channel)
